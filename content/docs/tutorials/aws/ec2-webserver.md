@@ -400,7 +400,7 @@ user_data = """
 #!/bin/bash
 echo "Hello, World!" > index.html
 nohup python -m SimpleHTTPServer 80 &
-"""
+""".lstrip()
 # ^-- ADD THIS DEFINITION
 
 server = ec2.Instance('webserver-www',
